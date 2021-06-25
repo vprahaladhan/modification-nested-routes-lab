@@ -4,6 +4,7 @@
   <%= f.label :artist_name %>
   <%= f.text_field :artist_name %>
   <br />
+  <%= collection_select :song, :artist_id, Artist.all, :id, :name %>
 
   <%= f.submit %>
 <% end %>
